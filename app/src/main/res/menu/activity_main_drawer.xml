@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_qr"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/attend" />
+
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_assignment"
+            android:title="@string/assignment" />
+
+        <item
+            android:id="@+id/nav_sp"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile" />
+
+    </group>
+
+    <item android:title="@string/admin">
+        <menu>
+            <item
+                android:id="@+id/nav_chat_bot_results"
+                android:title="@string/chat_bot_results" />
+
+            <item
+                android:id="@+id/nav_create_attend"
+                android:title="@string/create_attend" />
+
+            <item
+                android:id="@+id/nav_show_assignments"
+                android:title="@string/assignment" />
+
+        </menu>
+    </item>
+
+</menu>

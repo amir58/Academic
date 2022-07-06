@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".qrcode.QRCodeGenerator">
+
+
+
+    <EditText
+        android:id="@+id/qr_et_lecture_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/stroke"
+        android:ellipsize="end"
+        android:hint="@string/lecture_name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:onClick="generate"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/start"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button"
+        android:onClick="openLecturesActivity"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/previous_lectures"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
